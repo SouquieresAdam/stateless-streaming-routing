@@ -1,0 +1,12 @@
+# Required connection configs for Kafka producer, consumer, and admin
+kafka.properties.bootstrap.servers=your-broker.confluent.cloud:9092
+kafka.properties.security.protocol=SASL_SSL
+kafka.properties.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username='username' password='password';
+kafka.properties.sasl.mechanism=PLAIN
+kafka.properties.client.dns.lookup=use_all_dns_ips
+kafka.properties.session.timeout.ms=45000
+kafka.properties.schema.registry.url=your-schema-registry.confluent.cloud:9092
+kafka.properties.basic.auth.credentials.source=USER_INFO
+kafka.properties.basic.auth.user.info=user:password
+env=dev
+domain=dsl

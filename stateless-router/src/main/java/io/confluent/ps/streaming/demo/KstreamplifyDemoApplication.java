@@ -1,0 +1,11 @@
+package io.confluent.ps.streaming.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class KstreamplifyDemoApplication {
+	public static void main(String[] args) {
+		SpringApplication.run(KstreamplifyDemoApplication.class, args);
+	}
+}

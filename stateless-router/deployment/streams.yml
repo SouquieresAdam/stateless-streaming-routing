@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: dsl-word-count
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dsl-word-count
+  volumeClaimTemplates:
+    - metadata:
+        name: pvc-storage
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        storageClassName: standard-rwo
+        resources:
+          requests:
+            storage: 1Gi
+  template:
+    metadata:
+      annotations:
+        prometheus.io/scrape: 'true'
+        prometheus.io/port: '1234'
+      labels:
+        apptype: stream
+        app: dsl-word-count
+    spec:
+      containers:
+        - name: dsl-word-count
+          image: gcr.io/solutionsarchitect-01/word-count:1.0.0-SNAPSHOT
+          imagePullPolicy: Always
+          volumeMounts:
+            - name: config-volume
+              mountPath: /app/config
+            - name: pvc-storage
+              mountPath: /app/data
+          ports:
+            - containerPort: 1234  # Prometheus metrics port
+      volumes:
+        - name: config-volume
+          configMap:
+            name: word-count-cm

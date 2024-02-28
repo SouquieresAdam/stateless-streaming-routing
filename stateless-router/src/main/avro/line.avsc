@@ -1,0 +1,14 @@
+{
+    "type": "record",
+    "name": "Line",
+    "namespace": "com.example.kstreamplifydemo.model",
+    "fields": [
+        {
+            "name": "content",
+            "type": {
+                "type": "string"
+            }
+        }
+    ],
+    "connect.name": "com.example.kstreamplifydemo.model.Line"
+}

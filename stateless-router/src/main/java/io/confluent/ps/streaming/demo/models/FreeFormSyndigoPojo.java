@@ -1,15 +1,16 @@
 package io.confluent.ps.streaming.demo.models;
 
 
-
 import com.fasterxml.jackson.annotation.*;
 import lombok.Data;
 
-
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Data
-public class StructuredSyndigoPojo {
+public class FreeFormSyndigoPojo {
 
     private String id;
     private String name;

@@ -1,0 +1,97 @@
+{
+  "id": "ersSQtU3g5t9J9e",
+  "name": "TEST5678",
+  "type": "tradename",
+  "properties": {
+    "createdService": "entityManageService",
+    "createdBy": "Veerappa.Nethravathi@imcdext.com_user",
+    "modifiedService": "entityManageService",
+    "modifiedBy": "Veerappa.Nethravathi@imcdext.com_user",
+    "createdDate": "2024-02-22T03:54:54.388-0600",
+    "modifiedDate": "2024-02-22T03:54:54.388-0600",
+    "thumbnailid": "389fb0c5-73f3-4b59-b0fa-6fedfaaa5435.png"
+  },
+  "data": {
+    "attributes": {
+      "thgprincipal": {
+        "values": [
+          {
+            "id": "1_0_0",
+            "value": "1001093 - VALAJI PHARMA CHEM",
+            "locale": "en-GB",
+            "source": "internal",
+            "properties": {
+              "referenceData": "refprincipal/fdf5a4e4-4a6b-4fab-97c0-8f3c1f421ee7",
+              "referenceDataIdentifier": "1001093"
+            }
+          }
+        ]
+      },
+      "thgtradename": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "TEST5678",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "settradenametouppercase_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgsyndigoid": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "17439307014234780422",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "tradename_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgcreationdate": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "2024-02-22T03:54:54.452-0600",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "tradename_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgcreatedby": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "Veerappa.Nethravathi@imcdext.com_user",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "tradename_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgismigratedentity": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": false,
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "tradename_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      }
+    }
+  }
+}

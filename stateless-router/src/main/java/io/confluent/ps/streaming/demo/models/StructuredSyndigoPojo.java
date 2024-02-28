@@ -9,7 +9,7 @@ import lombok.Data;
 import java.util.*;
 
 @Data
-public class SimplePojo {
+public class StructuredSyndigoPojo {
 
     private String id;
     private String name;

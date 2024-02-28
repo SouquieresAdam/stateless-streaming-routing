@@ -1,0 +1,9 @@
+env:
+kafka:
+  properties:
+    application.id: "simple-routing-stream"
+    bootstrap.servers: pkc-921jm.us-east-2.aws.confluent.cloud:9092
+    security.protocol: SASL_SSL
+    sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username='RI553F5XDHVJ6DDR' password='Xd2cCElp9a2784w5ebj/S9zy2HwctwsgQaFVG+Roe4wd9cTzuBtqVTUPyY+2Ev6u';
+    sasl.mechanism: PLAIN
+    acks: all

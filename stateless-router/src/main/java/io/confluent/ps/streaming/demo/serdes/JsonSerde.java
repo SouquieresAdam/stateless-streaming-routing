@@ -1,17 +1,18 @@
-package org.lboutros.traveloptimizer.kstreams.topologies.serdes;
+package io.confluent.ps.streaming.demo.serdes;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.serialization.Deserializer;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serializer;
-import org.lboutros.traveloptimizer.kstreams.configuration.Constants;
 
 import java.util.Map;
 
 public abstract class JsonSerde<T> implements Serializer<T>, Deserializer<T>, Serde<T> {
-    private static final ObjectMapper OBJECT_MAPPER = Constants.OBJECT_MAPPER;
+    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()
+            .registerModule(new JavaTimeModule());
     private TypeReference<T> typeReference;
 
     @Override

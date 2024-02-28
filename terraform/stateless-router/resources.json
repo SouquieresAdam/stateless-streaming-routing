@@ -1,0 +1,54 @@
+{
+  "env": "dev",
+  "domain": "dsl",
+  "topics": [
+    {
+      "topic_name": "products-pim-exp",
+      "partitions_count": 3,
+      "config": {
+        "retention.ms": 604800000
+      }
+    },
+    {
+      "topic_name": "sku-changed",
+      "partitions_count": 3,
+      "config": {
+        "retention.ms": 604800000
+      }
+    },
+    {
+      "topic_name": "tradename-changed",
+      "partitions_count": 3,
+      "config": {
+        "retention.ms": 604800000
+      }
+    },
+    {
+      "topic_name": "tradegrade-changed",
+      "partitions_count": 3,
+      "config": {
+        "retention.ms": 604800000
+      }
+    },
+    {
+      "topic_name": "dlt",
+      "partitions_count": 3,
+      "config": {
+        "retention.ms": 604800000
+      }
+    }
+  ],
+  "schemas": [],
+  "connectors": [
+    {
+      "connector_config": {
+        "connector.class": "DatagenSource",
+        "name": "dev.dsl.input-generator",
+        "kafka.topic": "dev.dsl.input",
+        "output.data.format": "AVRO",
+        "schema.string": "{\"type\": \"record\", \"name\": \"Line\", \"namespace\": \"com.example.kstreamplifydemo.model\", \"fields\": [{\"name\": \"content\", \"type\": { \"type\": \"string\", \"arg.properties\": { \"options\": [\"A B C D\",\"B C D E\",\"C D E F\",\"D E F G H\",\"E F G H I\",\"F G H I J\",\"Z E R T\"] } } }], \"connect.name\": \"com.example.kstreamplifydemo.model.Line\"}",
+        "tasks.max": "1"
+      }
+    }
+  ]
+}

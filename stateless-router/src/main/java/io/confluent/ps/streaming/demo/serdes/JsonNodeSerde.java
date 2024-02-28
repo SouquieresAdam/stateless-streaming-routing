@@ -1,65 +1,34 @@
 package io.confluent.ps.streaming.demo.serdes;
 
-import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.serialization.Deserializer;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serializer;
 
-import java.util.Map;
+public class JsonNodeSerde implements Serde<JsonNode> {
 
-public abstract class JsonSerde<T> implements Serializer<T>, Deserializer<T>, Serde<T> {
-    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()
-            .registerModule(new JavaTimeModule());
-    private TypeReference<T> typeReference;
+    private final ObjectMapper mapper = new ObjectMapper();
 
     @Override
-    public void configure(final Map<String, ?> configs, final boolean isKey) {
-        typeReference = getTypeReference();
-    }
-
-    protected abstract TypeReference<T> getTypeReference();
-
-    @Override
-    public T deserialize(final String topic, final byte[] data) {
-        if (data == null) {
-            return null;
-        }
-
-        try {
-            return OBJECT_MAPPER.readValue(data, typeReference);
-        } catch (final Exception e) {
-            throw new SerializationException(e);
-        }
+    public Serializer<JsonNode> serializer() {
+        return (topic, data) -> {
+            try {
+                return mapper.writeValueAsBytes(data);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        };
     }
 
     @Override
-    public byte[] serialize(final String topic, final T data) {
-        if (data == null) {
-            return null;
-        }
-
-        try {
-            return OBJECT_MAPPER.writeValueAsBytes(data);
-        } catch (final Exception e) {
-            throw new SerializationException("Error serializing JSON message", e);
-        }
+    public Deserializer<JsonNode> deserializer() {
+        return (topic, data) -> {
+            try {
+                return mapper.readTree(data);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        };
     }
-
-    @Override
-    public void close() {
-    }
-
-    @Override
-    public Serializer<T> serializer() {
-        return this;
-    }
-
-    @Override
-    public Deserializer<T> deserializer() {
-        return this;
-    }
-
 }

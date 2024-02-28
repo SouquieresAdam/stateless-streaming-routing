@@ -1,0 +1,26 @@
+{
+  "type": "record",
+  "name": "TokenStats",
+  "namespace": "com.example.kstreamplifydemo.model",
+  "fields": [
+    {
+      "name": "token",
+      "type": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "count",
+      "type": {
+        "type": "long"
+      }
+    },
+    {
+      "name": "timestamp",
+      "type": {
+        "type": "long"
+      }
+    }
+  ],
+  "connect.name": "com.example.kstreamplifydemo.model.TokenStats"
+}
