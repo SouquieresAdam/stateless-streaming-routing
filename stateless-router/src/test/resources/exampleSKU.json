@@ -1,0 +1,286 @@
+{
+  "id": "ersBP0bQOj9gH24",
+  "name": "5001120DPTEST",
+  "type": "sku",
+  "properties": {
+    "createdService": "entityManageService",
+    "createdBy": "Harsh.Thakar@imcdext.com_user",
+    "createdDate": "2024-02-21T03:22:59.306-0600",
+    "modifiedService": "entityManageService",
+    "modifiedBy": "system_user",
+    "modifiedDate": "2024-02-21T04:52:31.820-0600"
+  },
+  "data": {
+    "attributes": {
+      "thgpacksize": {
+        "values": [
+          {
+            "id": "1_0_0",
+            "value": "0D - 3 ounce kit (0,08505 kg)",
+            "locale": "en-GB",
+            "source": "internal",
+            "properties": {
+              "referenceDataIdentifier": "0D",
+              "referenceData": "refuom/601dd2ec-a0a2-4308-b927-8f5fe23a7b94"
+            }
+          }
+        ]
+      },
+      "thgpacktype": {
+        "values": [
+          {
+            "id": "1_0_0",
+            "value": "Produced item by IMCD",
+            "locale": "en-GB",
+            "source": "internal",
+            "properties": {
+              "referenceDataIdentifier": "P",
+              "referenceData": "refpacktype/65b6ebd5-fca7-4eac-b95f-0c3da51f0062"
+            }
+          }
+        ]
+      },
+      "thgsegment4": {
+        "values": [
+          {
+            "id": "1_0_0",
+            "value": "TEST",
+            "locale": "en-GB",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgsyndigoid": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "17439422914223169288",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "sku_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgcreatedby": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "Harsh.Thakar@imcdext.com_user",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "sku_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgcreationdate": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "2024-02-21T03:22:59.409-0600",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "sku_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgitemclass": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "IMCD_STYLE_SKU",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "sku_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal",
+            "properties": {
+              "referenceDataIdentifier": "IMCD_STYLE_SKU",
+              "referenceData": "refitemclass/erslDznSU0OR1AW"
+            }
+          }
+        ]
+      },
+      "thgismigratedentity": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": false,
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "sku_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgvalidationstatus": {
+        "values": [
+          {
+            "id": "5_0_0",
+            "value": "validation_failed",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "setvalidationstatusasfailedforsku_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgprincipal": {
+        "values": [
+          {
+            "id": "7_0_0",
+            "value": "1002857 - PD.SELO WANGI",
+            "locale": "en-GB",
+            "os": "graph",
+            "osid": "ersZgdPX5KgHQO2",
+            "ostype": "tradegrade",
+            "source": "internal",
+            "properties": {
+              "referenceDataIdentifier": "1002857",
+              "referenceData": "refprincipal/93b41990-4cd8-44a1-9f54-84036324c151"
+            }
+          }
+        ]
+      },
+      "thgtradegrade": {
+        "values": [
+          {
+            "id": "8_0_0",
+            "value": "PD.SELO WANGI",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "settradegradetouppercase_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgtradename": {
+        "values": [
+          {
+            "id": "8_0_0",
+            "value": "PD.SELO WANGI",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "settradenametouppercase_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgwarehouseprocessinggroup1": {
+        "values": [
+          {
+            "id": "7_0_0",
+            "value": "CO - Raw mat.f.cosmetic formulation",
+            "locale": "en-GB",
+            "os": "graph",
+            "osid": "ersZgdPX5KgHQO2",
+            "ostype": "tradegrade",
+            "source": "internal",
+            "properties": {
+              "referenceDataIdentifier": "CO",
+              "referenceData": "refwarehouseprocessinggroup1/34b62187-7701-48d7-b195-58adb59be062"
+            }
+          }
+        ]
+      },
+      "thgsegmitemsegment1": {
+        "values": [
+          {
+            "id": "7_0_0",
+            "value": "500112",
+            "locale": "en-GB",
+            "os": "graph",
+            "osid": "ersZgdPX5KgHQO2",
+            "ostype": "tradegrade",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgfullsegmentnumber": {
+        "values": [
+          {
+            "id": "8_0_0",
+            "value": "5001120DPTEST",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "generatefullsegmentnumber_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgitemdescription": {
+        "values": [
+          {
+            "id": "8_0_0",
+            "value": "5001120DPTEST",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "populateskuitemdescription_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgdocumenturl": {
+        "values": [
+          {
+            "id": "9_0_0",
+            "value": "<a href=https://docs.imcd.nl/AppNet/docpop/docpop.aspx?clienttype=html&cqid=106&KT237_0_0_0=Y&KT241_0_0_0=500112>View document portal for 500112</a>",
+            "locale": "en-GB",
+            "os": "graph",
+            "osid": "ersZgdPX5KgHQO2",
+            "ostype": "tradegrade",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgcasmr": {
+        "group": [
+          {
+            "id": "9_0_0",
+            "locale": "en-GB",
+            "os": "graph",
+            "osid": "ersZgdPX5KgHQO2",
+            "ostype": "tradegrade",
+            "source": "internal",
+            "thgcasmrminvalue": {
+              "values": [
+                {
+                  "id": "9_0_0_0",
+                  "value": 21,
+                  "locale": "en-GB",
+                  "source": "internal"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "relationships": {
+      "belongstotradegrade": [
+        {
+          "id": "3_0_0",
+          "relTo": {
+            "id": "ersZgdPX5KgHQO2",
+            "type": "tradegrade"
+          },
+          "properties": {
+            "direction": "both",
+            "relationshipType": "belongstotradegrade"
+          }
+        }
+      ]
+    }
+  }
+}

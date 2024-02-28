@@ -1,0 +1,204 @@
+{
+  "id": "ersZqCIOr2v3Rlb",
+  "name": "PD.SELO WANGI",
+  "type": "tradegrade",
+  "properties": {
+    "createdService": "entityManageService",
+    "createdBy": "Harsh.Thakar@imcdext.com_user",
+    "createdDate": "2024-02-21T05:03:57.372-0600",
+    "modifiedService": "entityManageService",
+    "modifiedDate": "2024-02-21T05:07:08.246-0600",
+    "modifiedBy": "system_user"
+  },
+  "data": {
+    "attributes": {
+      "thgprincipal": {
+        "values": [
+          {
+            "id": "1_0_0",
+            "value": "1002857 - PD.SELO WANGI",
+            "locale": "en-GB",
+            "source": "internal",
+            "properties": {
+              "referenceData": "refprincipal/93b41990-4cd8-44a1-9f54-84036324c151",
+              "referenceDataIdentifier": "1002857"
+            }
+          }
+        ]
+      },
+      "thgtradegrade": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "PD.SELO WANGI",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "settradegradetouppercase_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgtradename": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "PD.SELO WANGI",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "settradenametouppercase_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgwarehouseprocessinggroup1": {
+        "values": [
+          {
+            "id": "1_0_0",
+            "value": "AP - Active Pharm. Ingredient (API)",
+            "locale": "en-GB",
+            "source": "internal",
+            "properties": {
+              "referenceData": "refwarehouseprocessinggroup1/a3c95822-9941-4585-acfe-ed0da0ee1ab1",
+              "referenceDataIdentifier": "AP"
+            }
+          }
+        ]
+      },
+      "thgsyndigoid": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "17439307014223223047",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "tradegrade_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgcreatedby": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "Harsh.Thakar@imcdext.com_user",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "tradegrade_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgcreationdate": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "2024-02-21T05:03:57.390-0600",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "tradegrade_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgitemclass": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "IMCD_STYLE_SKU",
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "tradegrade_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal",
+            "properties": {
+              "referenceData": "refitemclass/erslDznSU0OR1AW",
+              "referenceDataIdentifier": "IMCD_STYLE_SKU"
+            }
+          }
+        ]
+      },
+      "thgismigratedentity": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": false,
+            "locale": "en-GB",
+            "os": "defaults",
+            "osid": "tradegrade_entityDefaultValuesModel",
+            "ostype": "entityDefaultValuesModel",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgsegmitemsegment1": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "500117",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "generatesegment1_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgisduplicate": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": true,
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "identifyduplicatetradegrade_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgdocumenturl": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "<a href=https://docs.imcd.nl/AppNet/docpop/docpop.aspx?clienttype=html&cqid=106&KT237_0_0_0=Y&KT241_0_0_0=500117>View document portal for 500117</a>",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "computedocumenturl_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      },
+      "thgitemdescription": {
+        "values": [
+          {
+            "id": "2_0_0",
+            "value": "500117",
+            "locale": "en-GB",
+            "os": "businessRule",
+            "osid": "populatetgitemdescription_businessRule",
+            "ostype": "businessRule",
+            "source": "internal"
+          }
+        ]
+      }
+    },
+    "relationships": {
+      "belongstotradename": [
+        {
+          "id": "3_0_0",
+          "relTo": {
+            "id": "erspqtnm8vL1mPZ",
+            "type": "tradename"
+          },
+          "os": "graph"
+        }
+      ]
+    }
+  }
+}
